@@ -8,19 +8,20 @@
     <artifactId>hetool</artifactId>
     <packaging>pom</packaging>
     <version>0.1</version>
-    <developers>
-        <developer>
-            <name>hsy</name>
-            <email>shiyuan4work@126.com</email>
-        </developer>
-    </developers>
+    <name>${project.artifactId}</name>
+    <description>提供丰富的Java工具方法</description>
+    <url>https://github.com/shiyuan2he/hetool</url>
+    <modules>
+        <module>hetool-log</module>
+    </modules>
     <properties>
         <version.jdk>13</version.jdk>
         <version.encoding>UTF-8</version.encoding>
-        <junit.vsersion>4.13-rc-2</junit.vsersion>
+        <version.junit>4.13-rc-2</version.junit>
         <version.slf4j>1.7.25</version.slf4j>
         <version.logback>1.2.3</version.logback>
-        <version.commons.lang3>3.6</version.commons.lang3>
+        <version.lombok>1.18.10</version.lombok>
+        <!--<version.commons.lang3>3.6</version.commons.lang3>
         <version.velocity>1.7</version.velocity>
         <version.commons.io>2.5</version.commons.io>
         <version.commons.logging>1.2</version.commons.logging>
@@ -44,27 +45,23 @@
         <version.zookeeper>3.4.13</version.zookeeper>
         <version.pool.c3po>0.9.1.2</version.pool.c3po>
         <version.gson>2.8.2</version.gson>
-        <version.net.json>2.4</version.net.json>
-        <version.lombok>1.18.10</version.lombok>
+        <version.net.json>2.4</version.net.json>-->
     </properties>
     <dependencies>
         <!-- 全局单元测试 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <version>${version.junit}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>${lombok.version}</version>
+            <version>${version.lombok}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <dependencyManagement>
-    </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
