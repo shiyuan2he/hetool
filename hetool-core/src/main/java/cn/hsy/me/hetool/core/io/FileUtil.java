@@ -931,7 +931,7 @@ public class FileUtil {
 	 * @throws IORuntimeException IO异常
 	 */
 	public static File createTempFile(File dir) throws IORuntimeException {
-		return createTempFile("hutool", null, dir, true);
+		return createTempFile("hetool", null, dir, true);
 	}
 
 	/**
@@ -944,7 +944,7 @@ public class FileUtil {
 	 * @throws IORuntimeException IO异常
 	 */
 	public static File createTempFile(File dir, boolean isReCreat) throws IORuntimeException {
-		return createTempFile("hutool", null, dir, isReCreat);
+		return createTempFile("hetool", null, dir, isReCreat);
 	}
 
 	/**

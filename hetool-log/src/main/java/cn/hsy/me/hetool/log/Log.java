@@ -14,7 +14,7 @@ public interface Log extends TraceLog, DebugLog, InfoLog, WarnLog, ErrorLog {
 	 * 获得Log
 	 *
 	 * @param clazz 日志发出的类
-	 * @return Log
+     * @return Log
 	 */
 	static Log get(Class<?> clazz) {
 		return LogFactory.get(clazz);
@@ -24,7 +24,7 @@ public interface Log extends TraceLog, DebugLog, InfoLog, WarnLog, ErrorLog {
 	 * 获得Log
 	 *
 	 * @param name 自定义的日志发出者名称
-	 * @return Log
+	 * @return  Log
 	 * @since 5.0.0
 	 */
 	static Log get(String name) {
@@ -32,7 +32,7 @@ public interface Log extends TraceLog, DebugLog, InfoLog, WarnLog, ErrorLog {
 	}
 
 	/**
-	 * @return 获得日志，自动判定日志发出者
+	 * @return  获得日志，自动判定日志发出者
 	 * @since 5.0.0
 	 */
 	static Log get() {
@@ -41,14 +41,14 @@ public interface Log extends TraceLog, DebugLog, InfoLog, WarnLog, ErrorLog {
 	//------------------------------------------------------------------------ Static method start
 
 	/**
-	 * @return 日志对象的Name
+	 * @return  日志对象的Name
 	 */
 	String getName();
 
 	/**
 	 * 是否开启指定日志
 	 * @param level 日志级别
-	 * @return 是否开启指定级别
+	 * @return  是否开启指定级别
 	 */
 	boolean isEnabled(Level level);
 

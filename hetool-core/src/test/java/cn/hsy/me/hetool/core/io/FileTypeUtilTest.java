@@ -17,7 +17,7 @@ public class FileTypeUtilTest {
 	@Test
 	@Ignore
 	public void fileTypeUtilTest() {
-		File file = FileUtil.file("hutool.jpg");
+		File file = FileUtil.file("hetool.jpg");
 		String type = FileTypeUtil.getType(file);
 		Assert.assertEquals("jpg", type);
 		

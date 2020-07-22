@@ -8,6 +8,6 @@ public class DesktopUtilTest {
 	@Test
 	@Ignore
 	public void browseTest() {
-		DesktopUtil.browse("https://www.hutool.club");
+		DesktopUtil.browse("https://www.hetool.club");
 	}
 }

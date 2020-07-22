@@ -60,7 +60,7 @@ public class NamedThreadFactory implements ThreadFactory {
 	 * @param handler 未捕获异常处理
 	 */
 	public NamedThreadFactory(String prefix, ThreadGroup threadGroup, boolean isDaemon, UncaughtExceptionHandler handler) {
-		this.prefix = StrUtil.isBlank(prefix) ? "Hutool" : prefix;
+		this.prefix = StrUtil.isBlank(prefix) ? "Hetool" : prefix;
 		if (null == threadGroup) {
 			threadGroup = ThreadUtil.currentThreadGroup();
 		}

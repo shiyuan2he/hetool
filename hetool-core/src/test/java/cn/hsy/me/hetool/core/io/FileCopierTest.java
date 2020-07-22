@@ -25,7 +25,7 @@ public class FileCopierTest {
 		FileCopier copier = FileCopier.create("D:\\workspace\\java\\.metadata", "D:\\workspace\\java\\.metadata\\temp");
 		copier.copy();
 		
-		FileUtil.copy("D:\\workspace\\java\\looly\\hutool\\.git", "D:\\workspace\\java\\temp", true);
+		FileUtil.copy("D:\\workspace\\java\\looly\\hetool\\.git", "D:\\workspace\\java\\temp", true);
 	}
 	
 	@Test(expected = IORuntimeException.class)

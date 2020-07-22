@@ -225,7 +225,8 @@ public abstract class LogFactory {
 	 */
 	private static LogFactory doCreate() {
 		try {
-			return new Slf4jLogFactory(true);
+//			return new Slf4jLogFactory(true);
+			return new Slf4jLogFactory();
 		} catch (NoClassDefFoundError e) {
 			// ignore
 		}

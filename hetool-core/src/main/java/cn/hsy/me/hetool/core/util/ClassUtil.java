@@ -92,7 +92,7 @@ public class ClassUtil {
 	 * 例如：ClassUtil这个类<br>
 	 *
 	 * <pre>
-	 * isSimple为false: "com.xiaoleilu.hutool.util.ClassUtil"
+	 * isSimple为false: "com.xiaoleilu.hetool.util.ClassUtil"
 	 * isSimple为true: "ClassUtil"
 	 * </pre>
 	 *
@@ -617,7 +617,7 @@ public class ClassUtil {
 	 * 非单例模式，如果是非静态方法，每次创建一个新对象
 	 *
 	 * @param <T>                     对象类型
-	 * @param classNameWithMethodName 类名和方法名表达式，类名与方法名用<code>.</code>或<code>#</code>连接 例如：com.xiaoleilu.hutool.StrUtil.isEmpty 或 com.xiaoleilu.hutool.StrUtil#isEmpty
+	 * @param classNameWithMethodName 类名和方法名表达式，类名与方法名用<code>.</code>或<code>#</code>连接 例如：com.xiaoleilu.hetool.StrUtil.isEmpty 或 com.xiaoleilu.hetool.StrUtil#isEmpty
 	 * @param args                    参数，必须严格对应指定方法的参数类型和数量
 	 * @return 返回结果
 	 */
@@ -631,7 +631,7 @@ public class ClassUtil {
 	 * 执行非static方法时，必须满足对象有默认构造方法<br>
 	 *
 	 * @param <T>                     对象类型
-	 * @param classNameWithMethodName 类名和方法名表达式，例如：com.xiaoleilu.hutool.StrUtil#isEmpty或com.xiaoleilu.hutool.StrUtil.isEmpty
+	 * @param classNameWithMethodName 类名和方法名表达式，例如：com.xiaoleilu.hetool.StrUtil#isEmpty或com.xiaoleilu.hetool.StrUtil.isEmpty
 	 * @param isSingleton             是否为单例对象，如果此参数为false，每次执行方法时创建一个新对象
 	 * @param args                    参数，必须严格对应指定方法的参数类型和数量
 	 * @return 返回结果
@@ -938,7 +938,7 @@ public class ClassUtil {
 	/**
 	 * 获得给定类所在包的名称<br>
 	 * 例如：<br>
-	 * com.xiaoleilu.hutool.util.ClassUtil =》 com.xiaoleilu.hutool.util
+	 * com.xiaoleilu.hetool.util.ClassUtil =》 com.xiaoleilu.hetool.util
 	 *
 	 * @param clazz 类
 	 * @return 包名
@@ -958,7 +958,7 @@ public class ClassUtil {
 	/**
 	 * 获得给定类所在包的路径<br>
 	 * 例如：<br>
-	 * com.xiaoleilu.hutool.util.ClassUtil =》 com/xiaoleilu/hutool/util
+	 * com.xiaoleilu.hetool.util.ClassUtil =》 com/xiaoleilu/hetool/util
 	 *
 	 * @param clazz 类
 	 * @return 包名

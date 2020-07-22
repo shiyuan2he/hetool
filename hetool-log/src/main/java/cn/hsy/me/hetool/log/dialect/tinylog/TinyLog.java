@@ -119,9 +119,9 @@ public class TinyLog extends AbstractLog {
 	}
 	
 	/**
-	 * 将Hutool的Level等级转换为Tinylog的Level等级
+	 * 将Hetool的Level等级转换为Tinylog的Level等级
 	 * 
-	 * @param level Hutool的Level等级
+	 * @param level Hetool的Level等级
 	 * @return Tinylog的Level
 	 * @since 4.0.3
 	 */

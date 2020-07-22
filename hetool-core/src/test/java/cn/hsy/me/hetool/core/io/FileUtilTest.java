@@ -55,7 +55,7 @@ public class FileUtilTest {
 	@Ignore
 	public void delTest() {
 		// 删除一个不存在的文件，应返回true
-		boolean result = FileUtil.del("e:/Hutool_test_3434543533409843.txt");
+		boolean result = FileUtil.del("e:/Hetool_test_3434543533409843.txt");
 		Assert.assertTrue(result);
 	}
 	
@@ -63,20 +63,20 @@ public class FileUtilTest {
 	@Ignore
 	public void delTest2() {
 		// 删除一个不存在的文件，应返回true
-		boolean result = FileUtil.del(Paths.get("e:/Hutool_test_3434543533409843.txt"));
+		boolean result = FileUtil.del(Paths.get("e:/Hetool_test_3434543533409843.txt"));
 		Assert.assertTrue(result);
 	}
 
 	@Test
 	@Ignore
 	public void renameTest() {
-		FileUtil.rename(FileUtil.file("hutool.jpg"), "b.png", false, false);
+		FileUtil.rename(FileUtil.file("hetool.jpg"), "b.png", false, false);
 	}
 
 	@Test
 	public void copyTest() {
-		File srcFile = FileUtil.file("hutool.jpg");
-		File destFile = FileUtil.file("hutool.copy.jpg");
+		File srcFile = FileUtil.file("hetool.jpg");
+		File destFile = FileUtil.file("hetool.copy.jpg");
 
 		FileUtil.copy(srcFile, destFile, true);
 
@@ -96,15 +96,15 @@ public class FileUtilTest {
 	@Test
 	public void equlasTest() {
 		// 源文件和目标文件都不存在
-		File srcFile = FileUtil.file("d:/hutool.jpg");
-		File destFile = FileUtil.file("d:/hutool.jpg");
+		File srcFile = FileUtil.file("d:/hetool.jpg");
+		File destFile = FileUtil.file("d:/hetool.jpg");
 
 		boolean equals = FileUtil.equals(srcFile, destFile);
 		Assert.assertTrue(equals);
 
 		// 源文件存在，目标文件不存在
-		File srcFile1 = FileUtil.file("hutool.jpg");
-		File destFile1 = FileUtil.file("d:/hutool.jpg");
+		File srcFile1 = FileUtil.file("hetool.jpg");
+		File destFile1 = FileUtil.file("d:/hetool.jpg");
 
 		boolean notEquals = FileUtil.equals(srcFile1, destFile1);
 		Assert.assertFalse(notEquals);
@@ -220,13 +220,13 @@ public class FileUtilTest {
 	@Test
 	public void listFileNamesTest() {
 		List<String> names = FileUtil.listFileNames("classpath:");
-		Assert.assertTrue(names.contains("hutool.jpg"));
+		Assert.assertTrue(names.contains("hetool.jpg"));
 
 		names = FileUtil.listFileNames("");
-		Assert.assertTrue(names.contains("hutool.jpg"));
+		Assert.assertTrue(names.contains("hetool.jpg"));
 
 		names = FileUtil.listFileNames(".");
-		Assert.assertTrue(names.contains("hutool.jpg"));
+		Assert.assertTrue(names.contains("hetool.jpg"));
 	}
 	
 	@Test
@@ -336,7 +336,7 @@ public class FileUtilTest {
 	public void getWebRootTest() {
 		File webRoot = FileUtil.getWebRoot();
 		Assert.assertNotNull(webRoot);
-		Assert.assertEquals("hutool-core", webRoot.getName());
+		Assert.assertEquals("hetool-core", webRoot.getName());
 	}
 	
 	@Test

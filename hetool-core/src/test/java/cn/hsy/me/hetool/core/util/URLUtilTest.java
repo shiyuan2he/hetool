@@ -17,54 +17,54 @@ public class URLUtilTest {
 
 	@Test
 	public void normalizeTest() {
-		String url = "http://www.hutool.cn//aaa/bbb";
+		String url = "http://www.hetool.cn//aaa/bbb";
 		String normalize = URLUtil.normalize(url);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb", normalize);
 
-		url = "www.hutool.cn//aaa/bbb";
+		url = "www.hetool.cn//aaa/bbb";
 		normalize = URLUtil.normalize(url);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb", normalize);
 	}
 	
 	@Test
 	public void normalizeTest2() {
-		String url = "http://www.hutool.cn//aaa/\\bbb?a=1&b=2";
+		String url = "http://www.hetool.cn//aaa/\\bbb?a=1&b=2";
 		String normalize = URLUtil.normalize(url);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb?a=1&b=2", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb?a=1&b=2", normalize);
 		
-		url = "www.hutool.cn//aaa/bbb?a=1&b=2";
+		url = "www.hetool.cn//aaa/bbb?a=1&b=2";
 		normalize = URLUtil.normalize(url);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb?a=1&b=2", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb?a=1&b=2", normalize);
 	}
 	
 	@Test
 	public void normalizeTest3() {
-		String url = "http://www.hutool.cn//aaa/\\bbb?a=1&b=2";
+		String url = "http://www.hetool.cn//aaa/\\bbb?a=1&b=2";
 		String normalize = URLUtil.normalize(url, true);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb?a=1&b=2", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb?a=1&b=2", normalize);
 		
-		url = "www.hutool.cn//aaa/bbb?a=1&b=2";
+		url = "www.hetool.cn//aaa/bbb?a=1&b=2";
 		normalize = URLUtil.normalize(url, true);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb?a=1&b=2", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb?a=1&b=2", normalize);
 
-		url = "\\/www.hutool.cn//aaa/bbb?a=1&b=2";
+		url = "\\/www.hetool.cn//aaa/bbb?a=1&b=2";
 		normalize = URLUtil.normalize(url, true);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb?a=1&b=2", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb?a=1&b=2", normalize);
 	}
 	
 	@Test
 	public void formatTest() {
-		String url = "//www.hutool.cn//aaa/\\bbb?a=1&b=2";
+		String url = "//www.hetool.cn//aaa/\\bbb?a=1&b=2";
 		String normalize = URLUtil.normalize(url);
-		Assert.assertEquals("http://www.hutool.cn/aaa/bbb?a=1&b=2", normalize);
+		Assert.assertEquals("http://www.hetool.cn/aaa/bbb?a=1&b=2", normalize);
 	}
 
 	@Test
 	public void getHostTest() throws MalformedURLException {
-		String url = "https://www.hutool.cn//aaa/\\bbb?a=1&b=2";
+		String url = "https://www.hetool.cn//aaa/\\bbb?a=1&b=2";
 		String normalize = URLUtil.normalize(url);
 		URI host = URLUtil.getHost(new URL(normalize));
-		Assert.assertEquals("https://www.hutool.cn", host.toString());
+		Assert.assertEquals("https://www.hetool.cn", host.toString());
 	}
 
 	@Test

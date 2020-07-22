@@ -11,7 +11,7 @@ import cn.hsy.me.hetool.log.LogFactory;
 public class ConsoleLogFactory extends LogFactory {
 	
 	public ConsoleLogFactory() {
-		super("Hutool Console Logging");
+		super("Hetool Console Logging");
 	}
 
 	@Override

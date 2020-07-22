@@ -97,7 +97,6 @@ public class CustomLogTest {
 		LogFactory factory = new Slf4jLogFactory();
 		LogFactory.setCurrentLogFactory(factory);
 		Log log = LogFactory.get();
-		
 		log.info(null);
 		log.info("This is custom '{}' log\n{}", factory.getName(), LINE);
 	}
